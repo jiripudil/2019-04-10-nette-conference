@@ -1,0 +1,160 @@
+* {
+	font-family: sans-serif;
+}
+
+
+.wrapper {
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+
+.logo {
+	max-height: 150px;
+}
+
+
+.basketWidget {
+	width: 3rem;
+	position: relative;
+	float: right;
+	margin-top: 3.5rem;
+}
+
+
+.basketWidget a {
+	text-decoration: none;
+}
+
+.basketWidget-itemsCount {
+	position: absolute;
+	bottom: 0;
+	right: -.5rem;
+
+	width: 1rem;
+	height: 1rem;
+	text-align: center;
+	border-radius: 50%;
+
+	background: red;
+	color: white;
+	font-weight: bold;
+ }
+
+.basketWidget-basket {
+}
+
+
+.mainContent {
+	border-top: 2px solid gray;
+	padding: 2rem 1rem;
+}
+
+
+.catalog-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+
+.catalog-item-image {
+	flex: 0 0 20%;
+	text-align: center;
+}
+
+.catalog-item-image img {
+	max-width: 10rem;
+}
+
+.catalog-item-details {
+	flex: 1 0 60%;
+}
+
+.catalog-item-details-name {
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+
+.catalog-item-details-description {
+	font-size: 1.2rem;
+}
+
+.catalog-item-details-price {
+	margin-top: .5rem;
+	color: gray;
+}
+
+.catalog-item-addToBasket {
+	flex: 0 0 15%;
+	text-align: right;
+}
+
+
+.pagination {
+	margin-top: 1rem;
+	padding: .5rem 0;
+	background: #eee;
+	text-align: center;
+}
+
+.pagination ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.pagination ul li {
+	display: inline-block;
+}
+
+.pagination ul li:not(:first-child) {
+	margin-left: .5rem;
+}
+
+
+.reviews-overall {
+	margin: 3rem 0 1rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.reviews-list {
+	display: flex;
+}
+
+.review {
+	flex: 0 0 30%;
+	margin-right: 2rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.review-author-portrait {
+	flex: 0 0 25%;
+}
+
+.review-author-portrait img {
+	max-width: 4rem;
+}
+
+.review-author-name {
+	flex: 1 0 35%;
+	font-weight: bold;
+}
+
+.review-ranking {
+	flex: 1 0 40%;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.review-ranking-positive {
+	color: green;
+}
+
+.review-ranking-negative {
+	color: crimson;
+}

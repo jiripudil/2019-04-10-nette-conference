@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>{include title} - Acme Corporation</title>
+	<link rel="stylesheet" href="{$basePath}/styles/acme.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="siteHeader">
+			<a n:href="ProductList:">
+				<img
+					src="https://vignette.wikia.nocookie.net/looneytunes/images/5/56/Comp_2.jpg"
+					alt="Acme Corporation"
+					class="logo"
+				>
+			</a>
+
+			{control basketWidget}
+		</header>
+
+		<main class="mainContent">
+			{include content}
+		</main>
+	</div>
+</body>
+</html>

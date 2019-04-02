@@ -1,0 +1,35 @@
+{layout ../@layout.latte}
+
+{block title}Product Catalog{/block}
+{block content}
+<h1>Product Catalog</h1>
+
+<div class="catalog">
+	<div class="catalog-item" n:foreach="$products as $product">
+		<div class="catalog-item-image" >
+			<img src="{$product->getImageUrl()|nocheck}" alt="{$product->getName()}">
+		</div>
+		<div class="catalog-item-details">
+			<div class="catalog-item-details-name">
+				<a n:href="ProductDetail: id => $product->getId()">
+					{$product->getName()}
+				</a>
+			</div>
+			<div class="catalog-item-details-description">{$product->getDescription()}</div>
+			<div class="catalog-item-details-price">${$product->getPrice()}</div>
+		</div>
+	</div>
+
+	<div class="pagination">
+		<ul>
+			<li n:for="$page = 1; $page <= $paginator->getLastPage(); $page++">
+				<a
+					n:href="this page => $page"
+					n:tag-if="$page !== $paginator->getPage()"
+				>
+					{$page}
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>

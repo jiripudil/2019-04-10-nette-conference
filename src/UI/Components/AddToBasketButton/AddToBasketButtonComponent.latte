@@ -1,0 +1,13 @@
+<div class="addToBasket">
+	{if $item === null}
+		<a n:href="add!" class="addToBasket-button">
+			Add to Basket
+		</a>
+	{else}
+		{form form}
+			<button n:name="subtract" />
+			{$item->amount}
+			<button n:name="add" />
+		{/form}
+	{/if}
+</div>

@@ -1,3 +1,13 @@
 application:
 	mapping:
 		*: App\UI\Presenters\*Presenter
+
+
+services:
+	routing.router: App\Routing\RouterFactory()::createRouter
+
+	- App\Domain\Catalog\ProductRepository
+	- App\Domain\Basket\Basket
+
+	- App\UI\Components\BasketWidget\BasketWidgetComponentFactory
+	- App\UI\Components\AddToBasketButton\AddToBasketButtonComponentFactory
