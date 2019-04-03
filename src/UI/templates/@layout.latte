@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title n:snippet="title">{include title} - Acme Corporation</title>
-	<link rel="stylesheet" href="{$basePath}/styles/acme.css">
+	<link rel="stylesheet" href="{webpack main.css}">
 </head>
 <body>
 	<div class="wrapper">
@@ -24,7 +24,6 @@
 		</main>
 	</div>
 
-	<script src="{$basePath}/scripts/Naja.js"></script>
-	<script src="{$basePath}/scripts/index.js"></script>
+	<script src="{webpack main.js}"></script>
 </body>
 </html>

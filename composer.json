@@ -12,6 +12,7 @@
 		"nette/http": "^3.0",
 		"nette/neon": "^3.0",
 		"nette/utils": "^3.0",
+		"oops/webpack-nette-adapter": "^1.1",
 		"tracy/tracy": "^2.6"
 	},
 	"autoload": {
