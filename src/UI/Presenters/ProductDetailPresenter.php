@@ -51,7 +51,8 @@ final class ProductDetailPresenter extends BasePresenter
 	{
 		$control = $this->addToBasketButtonComponentFactory->create($this->product);
 		$control->onChange[] = function (): void {
-			$this->redirect('this');
+			$this->redrawControl('content');
+			$this['basketWidget']->redrawControl();
 		};
 
 		return $control;

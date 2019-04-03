@@ -11,7 +11,7 @@
 		</div>
 		<div class="catalog-item-details">
 			<div class="catalog-item-details-name">
-				<a n:href="ProductDetail: id => $product->getId()">
+				<a n:href="ProductDetail: id => $product->getId()" class="ajax">
 					{$product->getName()}
 				</a>
 			</div>
@@ -26,6 +26,7 @@
 				<a
 					n:href="this page => $page"
 					n:tag-if="$page !== $paginator->getPage()"
+					class="ajax"
 				>
 					{$page}
 				</a>

@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>{include title} - Acme Corporation</title>
+	<title n:snippet="title">{include title} - Acme Corporation</title>
 	<link rel="stylesheet" href="{$basePath}/styles/acme.css">
 </head>
 <body>
 	<div class="wrapper">
 		<header class="siteHeader">
-			<a n:href="ProductList:">
+			<a n:href="ProductList:" class="ajax">
 				<img
 					src="https://vignette.wikia.nocookie.net/looneytunes/images/5/56/Comp_2.jpg"
 					alt="Acme Corporation"
@@ -19,9 +19,12 @@
 			{control basketWidget}
 		</header>
 
-		<main class="mainContent">
+		<main class="mainContent" n:snippet="content">
 			{include content}
 		</main>
 	</div>
+
+	<script src="{$basePath}/scripts/Naja.js"></script>
+	<script src="{$basePath}/scripts/index.js"></script>
 </body>
 </html>

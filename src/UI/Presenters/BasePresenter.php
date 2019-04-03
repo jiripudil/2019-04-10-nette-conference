@@ -19,4 +19,13 @@ abstract class BasePresenter extends Presenter
 		return $this->basketWidgetComponentFactory->create();
 	}
 
+
+	protected function beforeRender(): void
+	{
+		parent::beforeRender();
+		$this->redrawControl('title');
+		$this->redrawControl('content');
+		$this['basketWidget']->redrawControl();
+	}
+
 }
