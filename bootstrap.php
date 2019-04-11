@@ -17,7 +17,7 @@ return (static function (): Container {
 	$configurator->setTimeZone('Europe/Prague');
 	$configurator->addParameters([
 		'appDir' => __DIR__ . '/src',
-		'wwwDir' => __DIR__ . '/public',
+		'wwwDir' => __DIR__ . '/www',
 	]);
 
 	$configurator->addConfig(__DIR__ . '/config/config.neon');
